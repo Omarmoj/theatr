@@ -1,0 +1,198 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <!-- file css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container top-nav">
+        <a href="index.html" class="logo"><img src="img/logo-black.png" alt="" /></a>
+        <form action="" class="search">
+          <input type="search" placeholder="search for products" />
+          <button type="submit">search</button>
+        </form>
+        <div class="cart_header">
+          <div onclick="open_cart()" class="icon_cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="count_item">0</span>
+          </div>
+          <div class="tottal_price">
+            <p>My cart:</p>
+            <p class="price_cart_head">$0</p>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="links container">
+          <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+          <ul id="menu">
+            <span onclick="cloce_menu()" class="bg_overlay">
+
+            </span>
+            <i onclick="cloce_menu()" class="fa-regular fa-circle-xmark btn_close_menu"></i>
+            <img class="logo_menu" src="img/logo-black.png" alt="">
+            <li ><a href="index.html">HOME</a></li>
+            <li><a href="all_product.html">ALL PRODUCTS</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+          <div class="login_signup">
+            <a href="login.css">login<i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="signin.html">sign up<i class="fa-solid fa-user-plus"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="cart">
+      <div class="top_cart">
+        <h3>My cart<span class="count_item_cart">(0item in cart)</span></h3>
+        <span onclick="cloce_cart()" class="cloce_cart"
+          ><i class="fa-regular fa-circle-xmark"></i
+        ></span>
+      </div>
+      <div class="items_in_cart"></div>
+      <div class="bottom_cart">
+        <div class="total">
+          <p>cart subtotal</p>
+          <p class="price_cart_total">$0</p>
+        </div>
+        <div class="button_cart">
+          <a href="chekout.html" class="btn_cart">proceed to checkout</a>
+          <button onclick="cloce_cart()" class="btn_cart trans_bg">shop more</button>
+        </div>
+      </div>
+    </div>
+    <section class="chekout">
+      <div class="container">
+        <form action="">
+          <div class="address">
+            <h2>Delivery Address</h2>
+            <div class="inputs">
+              <label for="">Email</label>
+              <input type="email"  placeholder="Enter your Email"/>
+
+              <label for="">name</label>
+              <input type="text" placeholder="Enter your name"/>
+
+              <label for="">Address</label>
+              <input type="text" placeholder="Enter your Address"/>
+
+              <label for="">phone</label>
+              <input type="number" placeholder="Enter your number"/>
+            </div>
+          </div>
+          <div class="coupon">
+            <h2>coupon code</h2>
+            <div class="inputs">
+              <label for="">coupon code</label>
+              <input type="text" />
+            </div>
+          </div>
+        </form>
+        <div class="ordersummary">
+          <h1>order summary</h1>
+          <div class="item">
+            <div class="item_cart">
+              <img src="img/product/product-1.jpg" alt="" />
+              <div class="content">
+                <h4>Original Mopile Android Dual SIM smart phone G3</h4>
+                <p class="price_cart">price <span>$185</span></p>
+              </div>
+            </div>
+            <div class="item_cart">
+              <img src="img/product/product3.jpg" alt="" />
+              <div class="content">
+                <h4>samsung screen</h4>
+                <p class="price_cart">price <span>$140</span></p>
+              </div>
+            </div>
+<div class="total">
+  <p>total</p>
+  <span>$324.00</span>
+</div>
+<div class="button_dev">
+  <button>place order</button>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="big_row">
+          <img src="img/logo-white.png" alt="" />
+          <div class="hotline">
+            <i class="fa-solid fa-headset"></i>
+            <div class="text">
+              <h5>Hotline Free 24/24</h5>
+              <h6>(+100) 123 456 789</h6>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum,
+            omnis.
+          </p>
+        </div>
+
+        <div class="row">
+          <h4>FAQs $ Help</h4>
+
+          <div class="links">
+            <a href="#">F.A.Q.s</a>
+            <a href="#">Ordering tracking</a>
+            <a href="#">contacts</a>
+            <a href="#">Events</a>
+            <a href="#">Help center</a>
+          </div>
+        </div>
+        <div class="row">
+          <h4>SHipping & Delivery</h4>
+
+          <div class="links">
+            <a href="#">Delivery information</a>
+            <a href="#">Discount</a>
+            <a href="#">payments & Shipping</a>
+            <a href="#">Estimated Delivery time</a>
+            <a href="#">Shipping Guide</a>
+          </div>
+        </div>
+        <div class="row">
+          <h4>information</h4>
+
+          <div class="links">
+            <a href="#">popular</a>
+            <a href="#">Our services</a>
+            <a href="#">Your account</a>
+            <a href="#">privacy policy</a>
+            <a href="#">Terms & condition</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom_footer">
+        <div class="container">
+          <p>copyright &copy; <span>Topico.</span> all rights reserved</p>
+          <div class="payment_img">
+            <img src="img/payment-1.png" alt="" />
+            <img src="img/payment-2.png" alt="" />
+            <img src="img/payment-3.png" alt="" />
+            <img src="img/payment-4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/all_products.js"></script>
+  </body>
+</html>
